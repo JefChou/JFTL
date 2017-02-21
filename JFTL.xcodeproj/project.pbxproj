@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F618422D1E5BDCD1007342D2 /* RingQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F618422B1E5BDCD1007342D2 /* RingQueue.cpp */; };
+		F618422E1E5BDCD1007342D2 /* RingQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = F618422C1E5BDCD1007342D2 /* RingQueue.h */; };
+		F61842311E5BDCD8007342D2 /* pthread_auto_lock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F618422F1E5BDCD8007342D2 /* pthread_auto_lock.cpp */; };
+		F61842321E5BDCD8007342D2 /* pthread_auto_lock.h in Headers */ = {isa = PBXBuildFile; fileRef = F61842301E5BDCD8007342D2 /* pthread_auto_lock.h */; };
+		F61842751E5BE5AC007342D2 /* RingQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F618422C1E5BDCD1007342D2 /* RingQueue.h */; };
+		F61842761E5BE838007342D2 /* pthread_auto_lock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F61842301E5BDCD8007342D2 /* pthread_auto_lock.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F61842741E5BE595007342D2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F61842761E5BE838007342D2 /* pthread_auto_lock.h in CopyFiles */,
+				F61842751E5BE5AC007342D2 /* RingQueue.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F61842221E5BDC5F007342D2 /* libJFTL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJFTL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F618422B1E5BDCD1007342D2 /* RingQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RingQueue.cpp; path = RingQueue/RingQueue.cpp; sourceTree = "<group>"; };
+		F618422C1E5BDCD1007342D2 /* RingQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RingQueue.h; path = RingQueue/RingQueue.h; sourceTree = "<group>"; };
+		F618422F1E5BDCD8007342D2 /* pthread_auto_lock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pthread_auto_lock.cpp; path = AutoLock/pthread_auto_lock.cpp; sourceTree = "<group>"; };
+		F61842301E5BDCD8007342D2 /* pthread_auto_lock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pthread_auto_lock.h; path = AutoLock/pthread_auto_lock.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F618421F1E5BDC5F007342D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F61842191E5BDC5F007342D2 = {
+			isa = PBXGroup;
+			children = (
+				F618422A1E5BDCC6007342D2 /* AutoLock */,
+				F61842291E5BDCB8007342D2 /* RingQueue */,
+				F61842231E5BDC5F007342D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F61842231E5BDC5F007342D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F61842221E5BDC5F007342D2 /* libJFTL.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F61842291E5BDCB8007342D2 /* RingQueue */ = {
+			isa = PBXGroup;
+			children = (
+				F618422B1E5BDCD1007342D2 /* RingQueue.cpp */,
+				F618422C1E5BDCD1007342D2 /* RingQueue.h */,
+			);
+			name = RingQueue;
+			sourceTree = "<group>";
+		};
+		F618422A1E5BDCC6007342D2 /* AutoLock */ = {
+			isa = PBXGroup;
+			children = (
+				F618422F1E5BDCD8007342D2 /* pthread_auto_lock.cpp */,
+				F61842301E5BDCD8007342D2 /* pthread_auto_lock.h */,
+			);
+			name = AutoLock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F61842201E5BDC5F007342D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F618422E1E5BDCD1007342D2 /* RingQueue.h in Headers */,
+				F61842321E5BDCD8007342D2 /* pthread_auto_lock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F61842211E5BDC5F007342D2 /* JFTL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61842261E5BDC5F007342D2 /* Build configuration list for PBXNativeTarget "JFTL" */;
+			buildPhases = (
+				F618421E1E5BDC5F007342D2 /* Sources */,
+				F618421F1E5BDC5F007342D2 /* Frameworks */,
+				F61842201E5BDC5F007342D2 /* Headers */,
+				F61842741E5BE595007342D2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFTL;
+			productName = JFTL;
+			productReference = F61842221E5BDC5F007342D2 /* libJFTL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F618421A1E5BDC5F007342D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mac_dev;
+				TargetAttributes = {
+					F61842211E5BDC5F007342D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P3AK9LX343;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F618421D1E5BDC5F007342D2 /* Build configuration list for PBXProject "JFTL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F61842191E5BDC5F007342D2;
+			productRefGroup = F61842231E5BDC5F007342D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F61842211E5BDC5F007342D2 /* JFTL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F618421E1E5BDC5F007342D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F61842311E5BDCD8007342D2 /* pthread_auto_lock.cpp in Sources */,
+				F618422D1E5BDCD1007342D2 /* RingQueue.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F61842241E5BDC5F007342D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F61842251E5BDC5F007342D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F61842271E5BDC5F007342D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P3AK9LX343;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F61842281E5BDC5F007342D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P3AK9LX343;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F618421D1E5BDC5F007342D2 /* Build configuration list for PBXProject "JFTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61842241E5BDC5F007342D2 /* Debug */,
+				F61842251E5BDC5F007342D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F61842261E5BDC5F007342D2 /* Build configuration list for PBXNativeTarget "JFTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61842271E5BDC5F007342D2 /* Debug */,
+				F61842281E5BDC5F007342D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F618421A1E5BDC5F007342D2 /* Project object */;
+}
